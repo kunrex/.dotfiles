@@ -19,14 +19,18 @@ brew install \
     coreutils \
     yazi \
     zoxide \
-    fzf \
     bat \
     tmux \
-    oh-my-posh
+    oh-my-posh \
+    stow
+
+curl -fsSL https://raw.githubusercontent.com/junegunn/fzf/master/install | bash -s -- --all
 
 BREW_BASH="$(brew --prefix)/bin/bash"
 
 echo "$BREW_BASH" | sudo tee -a /etc/shells >/dev/null
 chsh -s "$BREW_BASH"
 
-"$(brew --prefix)/opt/fzf/install" --all
+echo "Setting up dotfiles with stow"
+cd "$(dirname "$0")"
+stow .
