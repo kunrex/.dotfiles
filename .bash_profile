@@ -1,10 +1,6 @@
 # Export local/bin
 export PATH="$PATH:$HOME/.local/bin"
 
-# Export pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PATH:$PYENV_ROOT/bin"
-
 #Export brew installs
 export BREW_ROOT=$(brew --prefix)
 export PATH="$PATH:$BREW_ROOT/bin"
