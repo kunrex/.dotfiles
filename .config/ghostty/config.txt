@@ -1,0 +1,23 @@
+theme = "pro"
+
+background = 101010
+foreground = ffffff
+
+background-blur = true
+background-opacity = 0.8
+
+cursor-style = block
+cursor-color = cell-foreground
+
+font-size = 11
+
+window-save-state = never
+window-new-tab-position = current
+
+working-directory = home
+
+window-padding-x = 4
+window-padding-y = 4
+
+window-padding-balance = true
+window-padding-color = background
