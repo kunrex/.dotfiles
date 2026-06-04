@@ -132,7 +132,7 @@ on-mode-changed = []
     alt-2 = ['workspace ide', 'exec-and-forget open -b dev.zed.Zed']
     alt-3 = ['workspace browser', 'exec-and-forget open -b com.brave.Browser']
     alt-4 = 'workspace simulations'
-    alt-5 = 'workspace misc'
+    alt-m = 'workspace misc'
     alt-7 = 'workspace textedit'
     alt-8 = ['workspace discord', 'exec-and-forget open -b com.hnc.Discord']
     alt-9 = 'workspace social'
@@ -208,6 +208,10 @@ run = ['move-node-to-workspace simulations', 'layout floating', 'workspace simul
 
 [[on-window-detected]]
 if.app-id = 'org.kicad.kicad'
+run = ['move-node-to-workspace simulations', 'layout floating', 'workspace simulations']
+
+[[on-window-detected]]
+if.app-id = 'org.blenderfoundation.blender'
 run = ['move-node-to-workspace simulations', 'layout floating', 'workspace simulations']
 
 [[on-window-detected]]

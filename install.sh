@@ -22,6 +22,7 @@ brew install \
     bat \
     tmux \
     oh-my-posh \
+    python \
     stow
 
 curl -fsSL https://raw.githubusercontent.com/junegunn/fzf/master/install | bash -s -- --all
