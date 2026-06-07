@@ -239,7 +239,7 @@ if.app-id = 'com.apple.calculator'
 run = ['layout floating']
 
 [[on-window-detected]]
-if.app-id = 'com.theboredteam.boring-notch'
+if.app-id = 'theboringteam.boringnotch'
 run = ['layout floating']
 
 [[on-window-detected]]
