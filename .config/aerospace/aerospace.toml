@@ -128,23 +128,29 @@ on-mode-changed = []
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
     alt-0 = ['workspace music', 'exec-and-forget open -b com.apple.Music']
+    alt-shift-0 = 'move-node-to-workspace music'
     alt-1 = ['workspace terminal', 'exec-and-forget open -b com.mitchellh.ghostty'] 
+    alt-shift-1 = 'move-node-to-workspace terminal'
     alt-2 = ['workspace ide', 'exec-and-forget open -b dev.zed.Zed']
+    alt-shift-2 = 'move-node-to-workspace ide'
     alt-3 = ['workspace browser', 'exec-and-forget open -b com.brave.Browser']
+    alt-shift-3 = 'move-node-to-workspace browser'
     alt-4 = 'workspace simulations'
+    alt-shift-4 = 'move-node-to-workspace simulations'
     alt-m = 'workspace misc'
+    alt-shift-m = 'move-node-to-workspace misc'
     alt-7 = 'workspace textedit'
+    alt-shift-7 = 'move-node-to-workspace textedit'
     alt-8 = ['workspace discord', 'exec-and-forget open -b com.hnc.Discord']
+    alt-shift-8 = 'move-node-to-workspace discord'
     alt-9 = 'workspace social'
+    alt-shift-9 = 'move-node-to-workspace social'
         
-    # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    alt-shift-4 = 'move-node-to-workspace misc'
-   
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-    alt-shift-m = 'mode service'
+    alt-shift-s = 'mode service'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -240,6 +246,10 @@ run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'theboringteam.boringnotch'
+run = ['layout floating']
+
+[[on-window-detected]]
+if.app-id = 'com.kunrex.Tasktile'
 run = ['layout floating']
 
 [[on-window-detected]]
