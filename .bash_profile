@@ -15,6 +15,10 @@ export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
 export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$NVM_DIR"
 
+# Export go
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH"
+
 #Export tailscale
 export PATH="$PATH:/Applications/Tailscale.app/Contents/MacOS"
 

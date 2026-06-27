@@ -14,6 +14,11 @@
   "session": {
     "trust_all_worktrees": true,
   },
+  "terminal": {
+    "shell": {
+      "program": "/opt/homebrew/bin/bash"
+    }
+  },
   "vim_mode": true,
   "format_on_save": "off",
   "agent_servers": {
@@ -51,6 +56,14 @@
         "backgroundIndexingEnabled": true,
       },
     },
+    "gopls": {
+      "binary": {
+        "path": "/opt/homebrew/bin/gopls",
+        "env": {
+          "PATH": "/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+        }
+      }
+    }
   },
   "languages": {
     "Swift": {

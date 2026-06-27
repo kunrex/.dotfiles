@@ -1,0 +1,19 @@
+server:
+  host: "mail"
+  port: 8080
+  mark_processed_after_run: true
+
+llm:
+  endpoint: "http://localhost:8080"
+  model: "mlx-community/gemma-4-e4b-it-8bit"
+  temperature: 0.2
+  max_tokens: 2048
+  top_p: 0.9
+
+relevance:
+  categories:
+    - "placement opportunity"
+    - "OA / online assessment"
+    - "hackathon registration"
+    - "internship offer or application update"
+    - "coding contest"
