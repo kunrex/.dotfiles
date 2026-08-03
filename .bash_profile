@@ -24,6 +24,14 @@ export PATH="$PATH:/Applications/Tailscale.app/Contents/MacOS"
 
 eval "$($BREW_ROOT/bin/brew shellenv)"
 
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+
+export PATH="$PATH:$PNPM_HOME"
+
 if [[ -r "$BREW_ROOT/etc/profile.d/bash_completion.sh" ]]; then
   source "$BREW_ROOT/etc/profile.d/bash_completion.sh"
 fi
